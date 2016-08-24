@@ -1,0 +1,17 @@
+{{#each items as |item|}}
+  <div class='row'>
+    <div class='col-sm-3'>
+      {{item.itemName}}
+    </div>
+    <div class='col-sm-3'>
+      {{item.description}}
+    </div>
+    <div class='col-sm-3'>
+      ${{item.price}}
+    </div>
+    <div class='col-sm-3'>
+      {{item-update item=item updateItem='updateItem' deleteItem='deleteItem'}}
+    </div>
+  </div>
+  <hr>
+{{/each}}
