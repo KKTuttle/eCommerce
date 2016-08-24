@@ -1,2 +1,5 @@
 <h1>Testing, 3, 2, 1</h1>
+{{#each model.items as |item|}}
+  {{item-tile item=item}}
+{{/each}}
 {{outlet}}
