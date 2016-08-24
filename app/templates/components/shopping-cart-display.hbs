@@ -1,0 +1,7 @@
+<h2>Your Shopping Cart</h2>
+
+{{#each shoppingCart.items as |item|}}
+  <li>{{item.itemName}} ---- ${{item.price}}</li>
+{{/each}}
+<strong>Total: ${{shoppingCart.totalPrice}}</strong>
+{{yield}}

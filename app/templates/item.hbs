@@ -1,0 +1,5 @@
+<h1>{{model.itemName}}</h1>
+<h3>Description: {{model.description}}</h3>
+<strong>Price: ${{model.price}}</strong>
+<button {{action 'addToCart' model}}>Add to Cart</button>
+{{outlet}}

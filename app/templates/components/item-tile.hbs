@@ -1,5 +1,13 @@
-<div class='col-sm-4'>
-  <h4>{{item.itemName}}</h4>
-  <p>{{item.description}}</p>
-  <strong>{{item.price}}</strong>
+<div class='col-sm-3 container-item'>
+  <div class="">
+    <h4>{{item.itemName}}</h4>
+    <div class="desc">
+      <p>{{item.description}}</p>
+      <strong>{{item.price}}</strong>
+    </div>
+  </div>
+  <p>{{#link-to 'item' item.id}}More details {{/link-to}}</p>
+  <button {{action 'addToCart' item}}>Add to Cart</button>
+
+
 </div>
