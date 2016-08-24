@@ -1,13 +1,5 @@
-<div class='col-sm-3 container-item'>
-  <div class="">
-    <h4>{{item.itemName}}</h4>
-    <div class="desc">
-      <p>{{item.description}}</p>
-      <strong>{{item.price}}</strong>
-    </div>
-  </div>
+  <h4>{{item.itemName}}</h4>
+  <strong>${{item.price}}</strong>
+  <p>{{item.description}}</p>
   <p>{{#link-to 'item' item.id}}More details {{/link-to}}</p>
-  <button {{action 'addToCart' item}}>Add to Cart</button>
-
-
-</div>
+  <button {{action 'addToCart' item}} class='item-tile-button'>Add to Cart</button>

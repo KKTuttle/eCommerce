@@ -1,7 +1,10 @@
 <h1>Products</h1>
-{{#each model.items as |item|}}
-  {{item-tile item=item}}
-{{/each}}
-{{outlet}}
-
-{{shopping-cart-display}}
+<div class='pageContent'>
+  <div class='itemList'>
+    {{#each model.items as |item|}}
+      {{item-tile item=item class='container-item'}}
+    {{/each}}
+    {{outlet}}
+  </div>
+  {{shopping-cart-display class='cart'}}
+</div>
