@@ -9,7 +9,6 @@
 .itemList {
   display: flex;
   flex-wrap:wrap;
-  justify-content: center;
 }
 
 .pageContent {
@@ -17,8 +16,8 @@
 }
 
 .cart {
-
 }
+
 .item-tile-button {
   float: right;
 }

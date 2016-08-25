@@ -1,7 +1,8 @@
 {{#each items as |item|}}
   <div class='row'>
     <div class='col-sm-3'>
-      {{item.itemName}}
+      {{item.itemName}}<br>
+      Feedback: {{#link-to 'item' item.id}}{{item.feedbacks.length}}{{/link-to}}
     </div>
     <div class='col-sm-3'>
       {{item.description}}

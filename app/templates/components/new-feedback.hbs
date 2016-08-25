@@ -1,0 +1,12 @@
+<h3> Leave Feedback</h3>
+<form>
+  <div class="form-group">
+    <label for="userName">User Name</label>
+    {{input value=userName id='userName'}}
+  </div>
+  <div class="form-group">
+    <label for="content">Content</label>
+    {{input value=content id=[content]}}
+  </div>
+  <button {{action 'saveFeedback'}}>Save</button>
+</form>
