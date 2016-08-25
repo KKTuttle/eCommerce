@@ -8,6 +8,7 @@ export default Ember.Component.extend({
         item: this.get('item'),
         userName: this.get('userName'),
         content: this.get('content'),
+        rating: this.get('rating'),
         date
       };
       this.sendAction('saveFeedbackToFirebase', params);
