@@ -1,7 +1,6 @@
 # E-commerce
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+A basic Ember application which uses service injection to provide a shopping-cart feature in an online store.
 
 ## Prerequisites
 
